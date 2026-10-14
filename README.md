@@ -10,53 +10,7 @@
 <h1 align="center">React-Native-Starterpack</h1>
 
 <p align="left">
-  A collection of reusable React Native components, code examples, and practical guides for building mobile applications. Covers common UI patterns, Firebase integrations, maps, navigation, data management, and more, with ready-to-use implementations designed to simplify development and encourage collaboration.
+This is an open, community-driven collection of reusable React Native components, code examples, and practical guides for building mobile applications. It covers common UI patterns, Firebase integrations, maps, navigation, data management, and more, with ready-to-use implementations designed to simplify development. Anyone is welcome to contribute components, share solutions, improve existing examples, or add new guides. The goal is to build a growing, shared resource where developers of all experience levels can learn from each other and help make React Native development more accessible.
 </p>
-
-
-
-
-A copy/paste starterpack for React Native components and utility code.
-
-This repository is intentionally simple: it is a collection of ready-to-use UI blocks and code snippets you can quickly drop into a project to get moving fast.
-
-## What you can copy right away
-
-### UI components
-
-- `/starterpack/ui/PrimaryButton.tsx`
-- `/starterpack/ui/ScreenContainer.tsx`
-- `/starterpack/ui/EmptyState.tsx`
-
-### Utility code
-
-- `/starterpack/code/useAsyncState.ts`
-- `/starterpack/code/storage.ts`
-
-## Quick start
-
-1. Copy any file(s) from `starterpack/ui` or `starterpack/code` into your app.
-2. Adjust colors/text/styles to match your design system.
-3. Import and use in your screen/component.
-
-Example:
-
-```tsx
-import { ScreenContainer } from "./starterpack/ui/ScreenContainer";
-import { PrimaryButton } from "./starterpack/ui/PrimaryButton";
-import { useAsyncState } from "./starterpack/code/useAsyncState";
-
-export const HomeScreen = () => {
-  const { value, loading, error, run } = useAsyncState(async () => {
-    return "Starterpack ready";
-  });
-
-  return (
-    <ScreenContainer>
-      <PrimaryButton title={loading ? "Loading..." : "Load"} onPress={run} />
-    </ScreenContainer>
-  );
-};
-```
 
 
