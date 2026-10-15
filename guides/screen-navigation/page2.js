@@ -1,8 +1,8 @@
 
 import React from "react";
-import { View, Text, Pressable, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
-export default function Page2({ navigation }) {
+export default function Page2() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Page 2</Text>
@@ -10,14 +10,6 @@ export default function Page2({ navigation }) {
       <Text style={styles.description}>
         This is the second page.
       </Text>
-
-      <Pressable
-        style={styles.button}
-        onPress={() => navigation.navigate("Home")}
-        accessibilityRole="button"
-      >
-        <Text style={styles.buttonText}>Go to Home</Text>
-      </Pressable>
     </View>
   );
 }
@@ -25,30 +17,20 @@ export default function Page2({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
+    backgroundColor: "#080D16",
     alignItems: "center",
+    justifyContent: "center",
     padding: 24,
   },
   title: {
-    fontSize: 28,
+    color: "#F1F5F9",
+    fontSize: 24,
     fontWeight: "bold",
-    color: "#E2E8F0",
     marginBottom: 12,
   },
   description: {
-    fontSize: 16,
-    color: "#94A3B8",
-    marginBottom: 24,
-  },
-  button: {
-    backgroundColor: "#38BDF8",
-    paddingVertical: 14,
-    paddingHorizontal: 24,
-    borderRadius: 10,
-  },
-  buttonText: {
-    color: "#08111F",
-    fontSize: 16,
-    fontWeight: "600",
+    color: "#9CA3AF",
+    fontSize: 15,
+    textAlign: "center",
   },
 });

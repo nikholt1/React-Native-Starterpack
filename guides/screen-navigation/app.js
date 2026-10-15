@@ -1,43 +1,87 @@
 
-import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import React, { useState } from "react";
+import {
+  View,
+  Text,
+  Pressable,
+  Image,
+  StyleSheet,
+} from "react-native";
 
 import Home from "./Home";
 import Page2 from "./Page2";
 
-const Stack = createNativeStackNavigator();
-
 export default function App() {
+  const [currentPage, setCurrentPage] = useState("home");
+
   return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="Home"
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: "#111C2E",
-          },
-          headerTintColor: "#38BDF8",
-          headerTitleStyle: {
-            fontWeight: "600",
-          },
-          contentStyle: {
-            backgroundColor: "#0B1120",
-          },
-        }}
-      >
-        <Stack.Screen
-          name="Home"
-          component={Home}
-          options={{ title: "Home" }}
+    <View style={styles.container}>
+      <View style={styles.navbar}>
+        <Image
+          source={{
+            uri: "https://raw.githubusercontent.com/nikholt1/React-Native-Starterpack/refs/heads/main/react.png",
+          }}
+          style={styles.logo}
+          resizeMode="contain"
         />
 
-        <Stack.Screen
-          name="Page2"
-          component={Page2}
-          options={{ title: "Page 2" }}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+        <Pressable onPress={() => setCurrentPage("home")}>
+          <Text
+            style={[
+              styles.navText,
+              currentPage === "home" && styles.activeNav,
+            ]}
+          >
+            Home
+          </Text>
+        </Pressable>
+
+        <Pressable onPress={() => setCurrentPage("page2")}>
+          <Text
+            style={[
+              styles.navText,
+              currentPage === "page2" && styles.activeNav,
+            ]}
+          >
+            Page 2
+          </Text>
+        </Pressable>
+      </View>
+
+      <View style={styles.content}>
+        {currentPage === "home" ? <Home /> : <Page2 />}
+      </View>
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#080D16",
+  },
+  navbar: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 20,
+    padding: 16,
+    backgroundColor: "#111827",
+    borderBottomWidth: 1,
+    borderBottomColor: "#374151",
+  },
+  logo: {
+    width: 52,
+    height: 52,
+  },
+  navText: {
+    color: "#9CA3AF",
+    fontSize: 16,
+  },
+  activeNav: {
+    color: "#FFFFFF",
+    fontWeight: "bold",
+  },
+  content: {
+    flex: 1,
+  },
+});
