@@ -12,19 +12,23 @@ npx expo install react-native-maps
 
 ### 2. Add the example
 
-Replace the contents of `Home.js` with the `Home.js` file from this folder.
+Replace the contents of `App.js` with the `App.js` file from this folder.
 
-### 3. Run the application
+### 3. Start the application
 
-Start Expo:
+Run the following command:
 
 ```bash
 npx expo start
 ```
 
-Open the app on your phone, or use an Android emulator or iOS simulator on your computer.
+**Do not press any additional keys in the terminal.** Expo will display a QR code that you can scan with your phone to open the app.
 
-**Important:** This example uses the phone's native map integration. Android uses Google Maps by default, while iOS uses Apple Maps by default. If you want to test this map on your computer, you need a compatible emulator or simulator. It does not work directly in the browser using `react-native-maps`.
+- **Physical phone:** Install Expo Go, then scan the QR code using your phone's camera or Expo Go, as appropriate for your device. Make sure your phone and computer can communicate over the network.
+- **Android emulator:** Start an Android Virtual Device (AVD) using Android Studio before opening the app. With the emulator running, press `a` in the Expo terminal to launch the app.
+- **iOS simulator:** On macOS, open the iOS Simulator and press `i` in the Expo terminal. The iOS Simulator is not available natively on Windows.
+
+**Important:** This example uses the native map integration. Android uses Google Maps by default, while iOS uses Apple Maps by default. If you want to test this map on your computer, you need a compatible Android emulator or iOS simulator. It does not work directly in the browser using `react-native-maps`.
 
 ## How the code works
 
@@ -43,7 +47,7 @@ import MapView from "react-native-maps";
 ### Display the map
 
 ```jsx
-export default function Home() {
+export default function App() {
   return (
     <View style={styles.container}>
       <MapView style={styles.map} />
@@ -52,7 +56,7 @@ export default function Home() {
 }
 ```
 
-The `Home` component renders a container with a map inside it. No markers, location tracking, or additional controls are added.
+The `App` component renders a container with a map inside it. No markers, location tracking, or additional controls are added.
 
 ### Make the map fill the screen
 
