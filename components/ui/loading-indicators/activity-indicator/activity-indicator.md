@@ -10,11 +10,11 @@ The loading indicator displays a spinning animation and a `Loading...` message c
 
 ### Web
 
-<img src="./activity-web.png" alt="Loading indicator on web" width="50" height="50" />
+<img src="./activity-web.png" alt="Loading indicator on web" width="100" height="100" />
 
 ### Mobile
 
-<img src="./activity-phone.png" alt="Loading indicator on a phone" width="50" height="50" />
+<img src="./activity-phone.png" alt="Loading indicator on a phone" width="100" height="100" />
 
 **The appearance depends on the platform.** React Native may render the indicator differently on the web, Android, and iOS. The screenshots above demonstrate the differences between the web and mobile versions.
 
