@@ -3,9 +3,10 @@
     width="250"
     height="250"
     alt="React Native Starterpack"
-    src="https://github.com/user-attachments/assets/3ef41eac-f07c-4af3-a6e4-14cd835e85f9"
+    src="https://github.com/user-attachments/assets/f8d8f981-1eb8-4065-97de-16a7667986c5"
   />
 </p>
+
 
 <h1 align="center">React-Native-Starterpack</h1>
 
