@@ -2,15 +2,19 @@
 {
   "name": "react-native-starterpack-ui",
   "version": "1.0.0",
-  "description": "Reusable UI components for React Native",
+  "description": "Reusable UI components and animations for React Native",
   "main": "dist/index.js",
-  "files": ["dist"],
+  "react-native": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "babel src --out-dir dist --extensions .js,.jsx --ignore \"**/*.d.ts\""
+    "build": "babel src --out-dir dist --extensions .js,.jsx --ignore \"**/*.d.ts\"",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
+    "react": ">=18",
+    "react-native": ">=0.72"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.0",
@@ -18,5 +22,18 @@
     "@babel/preset-env": "^7.28.0",
     "@babel/preset-react": "^7.27.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikholt1/React-Native-Starterpack.git",
+    "directory": "packages/ui"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "components",
+    "ui",
+    "animations",
+    "starterpack"
+  ]
 }
