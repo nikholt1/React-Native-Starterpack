@@ -1,13 +1,27 @@
 # React-Native-Starterpack
 
 <p align="center">
-  <img
-    width="250"
-    height="250"
-    alt="React Native Starterpack"
-    src="https://github.com/user-attachments/assets/f8d8f981-1eb8-4065-97de-16a7667986c5"
-  />
+  <a href="https://github.com/facebook/react-native">
+    <img
+      width="250"
+      height="250"
+      alt="React Native Starterpack"
+      src="https://github.com/user-attachments/assets/f8d8f981-1eb8-4065-97de-16a7667986c5"
+    />
+  </a>
 </p>
+
+<p align="center">
+  A community-driven collection of reusable React Native components, practical guides, and complete project recipes.
+</p>
+
+<p align="center">
+  <strong>Not affiliated with or endorsed by Meta or the React Native team.</strong>
+</p>
+
+This repository is an independent collection of examples, reusable code, and guides created to help developers build React Native applications. It is not an official React Native project.
+
+**Official React Native repository:** [facebook/react-native](https://github.com/facebook/react-native)
 
 <h1 align="center">React-Native-Starterpack</h1>
 
