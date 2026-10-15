@@ -6,8 +6,6 @@
     src="https://github.com/user-attachments/assets/f8d8f981-1eb8-4065-97de-16a7667986c5"
   />
 </p>
-<img width="500" height="500" alt="reactnativeimage" src="https://github.com/user-attachments/assets/3a8129e5-7be1-4c3b-a708-5b16a9a5d843" />
-
 
 <h1 align="center">React-Native-Starterpack</h1>
 
